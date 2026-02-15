@@ -1,0 +1,46 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:setup": "node src/scripts/init-databa se.js setup",
+    "db:reset": "node src/scripts/init-database.js reset",
+    "db:health": "node src/scripts/init-database.js health",
+    "db:verify": "node src/scripts/init-database.js verify",
+    "db:stats": "node src/scripts/init-database.js stats"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.2",
+    "@cosmjs/amino": "^0.32.2",
+    "@cosmjs/math": "^0.36.0",
+    "@cosmjs/proto-signing": "^0.32.2",
+    "@cosmjs/stargate": "^0.32.2",
+    "@onchaindb/sdk": "0.4.1",
+    "@privy-io/react-auth": "^3.13.1",
+    "@privy-io/server-auth": "^1.32.5",
+    "@tailwindcss/postcss": "^4.1.12",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "next": "16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "viem": "^2.45.3"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "ts-node": "^10.9.1",
+    "typescript": "latest",
+    "why-is-node-running": "^3.2.2"
+  }
+}
